@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+  width: 80%;       /* ou um valor fixo como 500px */
+  max-height: 80vh; /* altura máxima da tela */
+  overflow-y: auto; /* ativa a rolagem vertical */
+  overflow-x: hidden; /* evita rolagem horizontal */
+  margin: 20px auto; /* centraliza na página */
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff4081;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e91e63;
+}
+
+.hidden {
+  display: none;
+}
+
+#surpriseMessage h2 {
+  color: #ff1744;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  color: #ff1744;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+.hidden {
+  display: none;
+}
+#fotosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px; /* Espaço entre as fotos */
+}
+
+.foto {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.5s;
+}
+
+.foto.lateral.esquerda {
+  transform: rotate(-10deg);
+}
+
+.foto.lateral.direita {
+  transform: rotate(10deg);
+}
+
+.foto.principal {
+  transform: rotate(0deg);
+}
+
+.hidden {
+  display: none;
+}
