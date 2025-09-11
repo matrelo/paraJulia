@@ -4,18 +4,15 @@ const loveSong = document.getElementById("loveSong");
 const fotosContainer = document.getElementById("fotosContainer");
 
 button.addEventListener("click", () => {
-  // Mostra a mensagem
+  
   surpriseMessage.classList.toggle("hidden");
 
-  // Mostra as fotos
   if (fotosContainer.classList.toggle("hidden"));
 
-  // Toca a música
   if (loveSong.paused) {
     loveSong.play();
   }
 
-  // Corações animados
   createHearts(100);
 });
 
@@ -31,3 +28,4 @@ function createHearts(count) {
     setTimeout(() => heart.remove(), 5000);
   }
 }
+
